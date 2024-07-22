@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      position: fixed;
+      bottom: 20px;
+      font-size: 11px; 
+      left: calc(50% - 130px);
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg max-w-lg w-full text-center">
+    <p class="text-green-500 text-xs uppercase mb-2">Advice #<span id="id-advice"></span></p>
+    <p class="text-xl font-semibold mb-4 " id="advice">
+    </p>
+   
+    <picture class="flex justify-center items-center ">
+      <source srcset="./src/images/pattern-divider-mobile.svg" media="(max-width:400px)">
+      <img src="./src/images/pattern-divider-desktop.svg" alt="">
+    </picture>
+    <div class="mt-4">
+        <button class="bg-green-500 text-white rounded-full p-2 hover:bg-green-800 duration-100 ease-in transition" id="button-dice">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
+          </svg>
+        </button>
+    </div>
+  </div>
+  
+  <div class="attribution flex">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./src/main.js"></script>
+</body>
+</html>
